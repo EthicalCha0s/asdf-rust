@@ -42,7 +42,7 @@ jobs:
 
       - name: Test plugin
         run: |
-          asdf plugin-add rust $GITHUB_WORKSPACE
+          asdf plugin add rust $GITHUB_WORKSPACE
           make test
         env:
           GITHUB_API_TOKEN: ${{ github.token }}
